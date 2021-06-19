@@ -7,8 +7,8 @@ function MobileNavbar(){
 
 	return(
 	<div>
-		<div style={{position:"fixed", top:"49vh", right:"0"}} onClick={() => menuClicked(!menu)}>
-			{menu?<div>menu</div>:<div>close</div>}
+		<div style={{position:"fixed", zIndex:"2", top:"49vh", right:"0"}} onClick={() => menuClicked(!menu)}>
+			{menu?<div>close</div>:<div>menu</div>}
 		</div>
 
 		{menu?<div style={{backgroundColor:"white", position:"fixed", top:"0", right:"0", height:"100vh", width:"100vw"}}>
