@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import {Route, useHistory} from "react-router-dom";
+import Root from "./components/root"
+import {useState} from "react";
+import Home from "./components/home"
 
 function App() {
+
+  const history = useHistory();
+
+  const [pageAlignment, setPageAlignment] = useState("right");
+
+  function checkAlignment(){
+    localStorage.getItem("align")?history.push("/home"):<></>;
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Route exact path="/">
+        <Home />
+      </Route>
+
+      <Route path="/home">
+        <Home/>
+      </Route>
+
+      <Route path="/projects">
+        <>project</>
+      </Route>
+
+      <Route path="/blog">
+        <>blog</>
+      </Route>
+
+      <Route path="/contact">
+        <>contact</>
+      </Route>
     </div>
   );
 }
