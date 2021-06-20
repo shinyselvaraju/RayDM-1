@@ -1,9 +1,12 @@
 *{
 	padding:0;
 	margin:0;
-	overflow-x:hidden;
 	background-color: #003B49;
 	color:white;
+}
+
+body{
+	overflow-x:hidden;
 }
 
 #sidebar{
@@ -20,17 +23,24 @@
 	width:100vw;
 }
 
-#servicesteaser{
-}
 
 #aboutusteaser{
 	color:white;
 }
 
-#whyus{
-}
-
 .Heading{
 	text-align:center;
-	overflow-y: hidden
+}
+
+.buttons{
+	border: 2px solid #0f0;
+	border-radius: 20px;
+	font-size:1.5em;
+	padding: 10px;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+.color1{
+	color:white !important; 
 }
