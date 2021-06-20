@@ -1,4 +1,5 @@
 import {useState, useEffect} from "react";
+import Card from "./servicecardteaser"
 
 function ServicesTeaser(){
 
@@ -21,7 +22,7 @@ function ServicesTeaser(){
 			<div className="row">
 				<div className="col-md-6">
 					<div onMouseOver={() => sethoverover(0)} className="col-md-6">Web Design</div>
-					{device==="mobile" && hoverover===0?<div>{hoverover}</div>:<div></div>}
+					{device==="mobile" && hoverover===0?<Card service={hoverover}/>:<div></div>}
 					<div onMouseOver={() => sethoverover(1)} className="col-md-6">Web Development</div>
 					{device==="mobile" && hoverover===1?<div>{hoverover}</div>:<div></div>}
 					<div onMouseOver={() => sethoverover(2)} className="col-md-6">Service 3</div>
@@ -30,7 +31,7 @@ function ServicesTeaser(){
 					{device==="mobile" && hoverover===3?<div>{hoverover}</div>:<div></div>}
 				</div>
 				<div className="col-md-6">
-					{device==="laptop"?hoverover:<div />}
+					{device==="laptop"?<Card service={hoverover}/>:<div />}
 				</div>
 			</div>
 		</div>
