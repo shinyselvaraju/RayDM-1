@@ -1,7 +1,9 @@
 function Landingpage(){
 	return(
-		<div id="landingpage">
-		<div></div>
+		<div>
+			<div id="landingpage">
+			<div></div>
+			</div>
 		</div>
 	)
 }

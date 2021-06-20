@@ -7,7 +7,7 @@ function Whyus(){
 
 	return(
 		<div id="whyus">
-			<h1>whyus</h1>
+			<h1 className="Heading">whyus</h1>
 			<div className="container">
 				<button onClick={() => setCount(count+2)}>&lt;</button>
 				<div>{list[count%list.length]}</div>

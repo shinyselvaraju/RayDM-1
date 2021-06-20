@@ -2,6 +2,8 @@
 	padding:0;
 	margin:0;
 	overflow-x:hidden;
+	background-color: #003B49;
+	color:white;
 }
 
 #sidebar{
@@ -13,33 +15,22 @@
 	height: 100vh;
 }
 
-.sidebarleft{
-	position:fixed;
-	top:15px;
-	left:15px;
-}
-
-.sidebarright{
-	position:fixed;
-	top:15px;
-	right:15px;
-}
-
 #landingpage{
 	height:100vh;
 	width:100vw;
-	background-color: #f0f;
 }
 
 #servicesteaser{
-	background-color: #666;
 }
 
 #aboutusteaser{
-	background-color: #420;
 	color:white;
 }
 
 #whyus{
-	background-color:cyan;
+}
+
+.Heading{
+	text-align:center;
+	overflow-y: hidden
 }
