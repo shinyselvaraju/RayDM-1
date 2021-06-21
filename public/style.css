@@ -44,3 +44,31 @@ body{
 .color1{
 	color:white !important; 
 }
+
+.mobilemenu{
+	margin-right:10px;
+}
+
+.option{
+	background-color:#003B49;
+	padding: 4px;
+	padding-left: 10px;
+	border-radius: 20px 0px 0px 20px;
+}
+
+#mobilenavbar{
+	backgroundColor:"white";
+	position:fixed;
+	top:0;
+	right:0;
+	height:100vh;
+	width:100vw;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#kryptonite{
+	height:300px;
+	width: 450px;
+}

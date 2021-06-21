@@ -11,7 +11,7 @@ function Landingpage(){
 		} else {
 		  	setDevice("laptop");
 		}
-	});
+	}, []);
 
 	return(
 		device==="laptop"?
