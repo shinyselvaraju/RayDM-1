@@ -9,14 +9,17 @@ function Sidebar(){
 	useEffect(() => {
 	
 		if(/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-		  // true for mobile device
-		  console.log("mobile device");
 		  setDevice("mobile");
 		} else {
-			console.log("laptop device");
 		  	setDevice("laptop");
 		}
-	});
+
+		const userAgent = navigator.userAgent.toLowerCase();
+		const isTablet = /(ipad|tablet|(android(?!.*mobile))|(windows(?!.*phone)(.*touch))|kindle|playbook|silk|(puffin(?!.*(IP|AP|WP))))/.test(userAgent);
+		if (isTablet){
+			setDevice("laptop")
+		}
+	}, []);
 
 	return(device==="laptop"?<Laptopnavbar/>:<Mobilenavbar />);
 

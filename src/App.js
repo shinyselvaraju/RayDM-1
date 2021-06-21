@@ -1,5 +1,4 @@
 import {Route, useHistory} from "react-router-dom";
-import Root from "./components/root"
 import {useState} from "react";
 import Home from "./components/home"
 

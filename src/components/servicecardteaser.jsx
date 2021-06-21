@@ -12,7 +12,7 @@ function Card(props){
 			img: "webdesign.jpg"
 		},
 		{
-			name: "Instagram/Facebook ads",
+			name: "Instagram, Facebook ads",
 			desc: "Breathtaking Visuals and Mind Bending experience",
 			img: "webdesign.jpg"
 		},
@@ -26,8 +26,8 @@ function Card(props){
 	return(
 		<div>
 			{/* {console.log(services[props.service])} */}
-			<img src={services[props.service].img} style={{height:"200px", width:"200px"}}/>
-			<h1 className="Heading">{services[props.service].name}</h1>
+			<img src={services[props.service].img} style={{height:"100%", width:"100%", maxHeight:"50vh"}}/>
+			<h3 className="Heading">{services[props.service].name}</h3>
 			<p>{services[props.service].desc}</p>
 		</div>
 	)

@@ -1,11 +1,17 @@
 function AboutusTeaser(){
 	return(
-		<div id="aboutusteaser" style={{textAlign:"center"}} className="container">
-			<div className="">
-				<img src="raydm.png" id="kryptonite"/>
-			</div>
-			<div className="">
-				The quote goes here
+		<div id="aboutusteaser" className="container-fluid">
+			<div className="row">
+				<div className="col-md-6">
+					<img src="r.jpeg" id="kryptonite"/>					
+				</div>
+				<div className="col-md-6" style={{margin:"auto"}}>
+					<div className="container">
+						<h1>Who are we?</h1>
+						<p>Fam, we're a group of engineers and scientists who believe the the world can be changed with the <u>tap</u> of a button and the stroke of a <u>pen.</u></p>
+						<span className="buttons">Our Team</span>
+					</div>
+					</div>
 			</div>
 		</div>
 	)

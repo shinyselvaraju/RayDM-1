@@ -1,9 +1,7 @@
 import Sidebar from "./sidebar";
 import Landingpage from "./landingpage";
-import AboutusTeaser from "./aboutusteaser";
 import ServicesTeaser from "./servicesteaser";
-import Whyus from "./whyus";
-import Team from "./team";
+import AboutusTeaser from "./aboutusteaser"
 
 function Home(props){
 	return(
@@ -12,8 +10,6 @@ function Home(props){
 		<Landingpage />
 		<AboutusTeaser />
 		<ServicesTeaser />
-		<Whyus />
-		<Team />
 		</div>
 	);
 }

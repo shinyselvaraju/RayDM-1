@@ -14,25 +14,30 @@ function ServicesTeaser(){
 		} else {
 		  	setDevice("laptop");
 		}
+
+		const userAgent = navigator.userAgent.toLowerCase();
+		const isTablet = /(ipad|tablet|(android(?!.*mobile))|(windows(?!.*phone)(.*touch))|kindle|playbook|silk|(puffin(?!.*(IP|AP|WP))))/.test(userAgent);
+		if (isTablet){
+			setDevice("laptop")
+		}
 	});
 
 	return(
 		<div id="servicesteaser" className="container">
-			<h1 className="Heading">Services</h1>
-			<div className="row">
-				<div className="col-md-6">
-					<div onMouseOver={() => sethoverover(0)} className="col-md-6">Web Design</div>
-					{device==="mobile" && hoverover===0?<Card service={hoverover}/>:<div></div>}
-					<div onMouseOver={() => sethoverover(1)} className="col-md-6">Web Development</div>
-					{device==="mobile" && hoverover===1?<div>{hoverover}</div>:<div></div>}
-					<div onMouseOver={() => sethoverover(2)} className="col-md-6">Service 3</div>
-					{device==="mobile" && hoverover===2?<div>{hoverover}</div>:<div></div>}
-					<div onMouseOver={() => sethoverover(3)} className="col-md-6">Service 4</div>
-					{device==="mobile" && hoverover===3?<div>{hoverover}</div>:<div></div>}
+			<h1 className="Heading">RayDM are Specialists in:</h1>
+			<div className="row" style={{marginTop:"69px"}}>
+				<div className="col-md-6" style={{margin:"auto"}}>
+					<div id="s1" onMouseOver={() => sethoverover(0)}><h1 style={hoverover===0?{color:"black"}:{}}>Web Design</h1></div>
+					{device==="mobile" && hoverover===0?<div style={{marginLeft:"20px"}}><Card service={hoverover}/></div>:<div></div>}
+					<div id="s2" onMouseOver={() => sethoverover(1)}><h1 style={hoverover===1?{color:"black"}:{}}>Web Dev.</h1></div>
+					{device==="mobile" && hoverover===1?<div style={{marginLeft:"20px"}}><Card service={hoverover}/></div>:<div></div>}
+					<div id="s3" onMouseOver={() => sethoverover(2)}><h1 style={hoverover===2?{color:"black"}:{}}>Advertisements</h1></div>
+					{device==="mobile" && hoverover===2?<div style={{marginLeft:"20px"}}><Card service={hoverover}/></div>:<div></div>}
+					<div id="s4" onMouseOver={() => sethoverover(3)}><h1 style={hoverover===3?{color:"black"}:{}}>Branding</h1></div>
+					{device==="mobile" && hoverover===3?<div style={{marginLeft:"20px"}}><Card service={hoverover}/></div>:<div></div>}
 				</div>
-				<div className="col-md-6">
-					{device==="laptop"?<Card service={hoverover}/>:<div />}
-				</div>
+				
+					{device==="laptop"?<div className="col-md-6"><Card service={hoverover}/></div>:<div />}
 			</div>
 		</div>
 	)
