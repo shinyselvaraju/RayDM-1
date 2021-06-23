@@ -13,10 +13,17 @@ body{
 	color: #0f0;
 }
 
+.lp{
+	background-color: transparent;
+}
+
 #landingpage{
 	height:100vh;
 	width:100vw;
 	color:white;
+	/*background-image: url("asgard.jpg");
+	background-repeat: no-repeat;
+	background-size: cover*/
 }
 
 
@@ -102,4 +109,8 @@ body{
 	color:white;
 	margin-top:4em;
 	/*text-align: center;*/
+}
+
+.steasers{
+	cursor:default;
 }

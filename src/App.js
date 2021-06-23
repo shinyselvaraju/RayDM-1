@@ -1,16 +1,12 @@
 import {Route, useHistory} from "react-router-dom";
 import {useState} from "react";
 import Home from "./components/home"
+import Service from "./components/service"
+import Contact from "./components/contactus"
 
 function App() {
 
   const history = useHistory();
-
-  const [pageAlignment, setPageAlignment] = useState("right");
-
-  function checkAlignment(){
-    localStorage.getItem("align")?history.push("/home"):<></>;
-  }
 
   return (
     <div>
@@ -22,8 +18,8 @@ function App() {
         <Home/>
       </Route>
 
-      <Route path="/projects">
-        <>project</>
+      <Route path="/service">
+        <Service />
       </Route>
 
       <Route path="/blog">
@@ -31,7 +27,7 @@ function App() {
       </Route>
 
       <Route path="/contact">
-        <>contact</>
+        <Contact />
       </Route>
     </div>
   );
