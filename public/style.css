@@ -44,7 +44,7 @@ body{
 .buttons:hover{
 	background-color: #0f0;
 	color: #003B49;
-	cursor: default;
+	cursor: pointer;
 }
 
 .color1{
@@ -113,4 +113,14 @@ body{
 
 .steasers{
 	cursor:default;
+}
+
+.inputs{
+	border:none;
+	margin: 0 10px;
+	border-bottom: 1px solid green;
+}
+
+.servicesdabba{
+	position:relative;
 }

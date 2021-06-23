@@ -15,7 +15,7 @@ function MobileNavbar(){
 				<div>
 					<NavLink className="nav-link color1" exact to="/home">Home</NavLink>
 			        <NavLink className="nav-link color1" exact to="/projects">Projects</NavLink>
-			        <NavLink className="nav-link color1" exact to="/services">Services</NavLink>
+			        <NavLink className="nav-link color1" exact to="/service">Services</NavLink>
 			        <NavLink className="nav-link color1" exact to="/contact">Contact</NavLink>
 				</div>
 			</div>:<div />}
