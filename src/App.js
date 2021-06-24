@@ -4,6 +4,7 @@ import Projects from "./components/projects"
 import Home from "./components/home"
 import Service from "./components/service"
 import Contact from "./components/contactus"
+import OurTeam from "./components/ourteam"
 
 function App() {
 
@@ -17,6 +18,10 @@ function App() {
 
       <Route path="/home">
         <Home/>
+      </Route>
+
+      <Route path="/about">
+        <OurTeam/>
       </Route>
 
       <Route path="/service">
