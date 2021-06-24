@@ -7,11 +7,11 @@ function MobileNavbar(){
 
 	return(
 	<div>
-		<div className="color1 option" style={{position:"fixed", zIndex:"2", top:"49vh", right:"0"}} onClick={() => menuClicked(!menu)}>
+		<div className="color1 option" style={{position:"fixed", zIndex:"101", top:"49vh", right:"0"}} onClick={() => menuClicked(!menu)}>
 			{menu?<div><i className="fas fa-times mobilemenu"></i></div>:<div><i className="fas fa-bars mobilemenu"></i></div>}
 		</div>
 
-		{menu?<div id="mobilenavbar">
+		{menu?<div id="mobilenavbar" style={{zIndex:"100"}}>
 				<div>
 					<NavLink className="nav-link color1" exact to="/home">Home</NavLink>
 			        <NavLink className="nav-link color1" exact to="/work">Work</NavLink>
