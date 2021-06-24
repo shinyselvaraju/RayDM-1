@@ -1,6 +1,8 @@
 import Sidebar from "./sidebar";
 import WorkCard from "./workcard";
-import Footer from "./footer"
+import Footer from "./footer";
+
+import {useEffect} from "react";
 
 const works=[
 	{
@@ -51,6 +53,11 @@ const works=[
 ]
 
 function Projects(){
+
+	useEffect(() => {
+	  window.scrollTo(0, 0);
+	}, []);
+
 	return(
 		<div>
 			<Sidebar/>

@@ -1,8 +1,15 @@
 import Sidebar from "./sidebar";
 import WorkCard from "./workcard";
 import Footer from "./footer";
+import {useEffect} from "react"
+
 
 function Service(){
+
+	useEffect(() => {
+	  window.scrollTo(0, 0);
+	}, []);
+	
 	return(
 		<div>
 			<Sidebar/>
