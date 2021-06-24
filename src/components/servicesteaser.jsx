@@ -18,27 +18,42 @@ function ServicesTeaser(){
 		const userAgent = navigator.userAgent.toLowerCase();
 		const isTablet = /(ipad|tablet|(android(?!.*mobile))|(windows(?!.*phone)(.*touch))|kindle|playbook|silk|(puffin(?!.*(IP|AP|WP))))/.test(userAgent);
 		if (isTablet){
-			setDevice("laptop")
+			setDevice("mobile")
 		}
 	});
 
 	return(
 		<div id="servicesteaser" className="container">
 			<h1 className="Heading">RayDM are Specialists in:</h1>
-			<div className="row" style={{marginTop:"69px"}}>
+			{device==="laptop"?<div className="row" style={{marginTop:"69px"}}>
 				<div className="col-md-6" style={{margin:"auto"}}>
 					<div id="s1" className="steasers" onMouseOver={() => sethoverover(0)}><h1 style={hoverover===0?{color:"black"}:{}}>{hoverover===0?<i class="fas fa-caret-right"></i>:<div/>}Web Design</h1></div>
-					{device==="mobile" && hoverover===0?<div style={{marginLeft:"20px"}}><Card service={hoverover}/></div>:<div></div>}
+					{/* {device==="mobile" && hoverover===0?<div style={{marginLeft:"20px"}}><Card service={hoverover}/></div>:<div></div>} */}
 					<div id="s2" className="steasers" onMouseOver={() => sethoverover(1)}><h1 style={hoverover===1?{color:"black"}:{}}>{hoverover===1?<i class="fas fa-caret-right"></i>:<div/>}Web Dev.</h1></div>
-					{device==="mobile" && hoverover===1?<div style={{marginLeft:"20px"}}><Card service={hoverover}/></div>:<div></div>}
+					{/* {device==="mobile" && hoverover===1?<div style={{marginLeft:"20px"}}><Card service={hoverover}/></div>:<div></div>} */}
 					<div id="s3" className="steasers" onMouseOver={() => sethoverover(2)}><h1 style={hoverover===2?{color:"black"}:{}}>{hoverover===2?<i class="fas fa-caret-right"></i>:<div/>}Advertisements</h1></div>
-					{device==="mobile" && hoverover===2?<div style={{marginLeft:"20px"}}><Card service={hoverover}/></div>:<div></div>}
+					{/* {device==="mobile" && hoverover===2?<div style={{marginLeft:"20px"}}><Card service={hoverover}/></div>:<div></div>} */}
 					<div id="s4" className="steasers" onMouseOver={() => sethoverover(3)}><h1 style={hoverover===3?{color:"black"}:{}}>{hoverover===3?<i class="fas fa-caret-right"></i>:<div/>}Branding</h1></div>
-					{device==="mobile" && hoverover===3?<div style={{marginLeft:"20px"}}><Card service={hoverover}/></div>:<div></div>}
+					{/* {device==="mobile" && hoverover===3?<div style={{marginLeft:"20px"}}><Card service={hoverover}/></div>:<div></div>} */}
 				</div>
 				
 					{device==="laptop"?<div className="col-md-6"><Card service={hoverover}/></div>:<div />}
+			</div>:
+			<div className="row" style={{marginTop:"69px"}}>
+				<div className="col-md-6">
+					<div style={{marginLeft:"20px"}}><Card service="0" /></div>
+				</div>
+				<div className="col-md-6">
+					<div style={{marginLeft:"20px"}}><Card service="1" /></div>
+				</div>
+				<div className="col-md-6">
+					<div style={{marginLeft:"20px"}}><Card service="2" /></div>
+				</div>
+				<div className="col-md-6">
+					<div style={{marginLeft:"20px"}}><Card service="3" /></div>
+				</div>
 			</div>
+		}
 		</div>
 	)
 }

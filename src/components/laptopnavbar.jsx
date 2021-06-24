@@ -11,7 +11,7 @@ function Laptopnavbar(){
 		    <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
 		      <div className="navbar-nav">
 		        <NavLink className="nav-link color1" exact to="/">Home</NavLink>
-		        <NavLink className="nav-link color1" exact to="/projects">Projects</NavLink>
+		        <NavLink className="nav-link color1" exact to="/work">Work</NavLink>
 		        <NavLink className="nav-link color1" exact to="/service">Services</NavLink>
 		        <NavLink className="nav-link color1" exact to="/contact">Contact</NavLink>
 		      </div>

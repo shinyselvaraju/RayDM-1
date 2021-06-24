@@ -1,5 +1,6 @@
 import {Route, useHistory} from "react-router-dom";
 import {useState} from "react";
+import Projects from "./components/projects"
 import Home from "./components/home"
 import Service from "./components/service"
 import Contact from "./components/contactus"
@@ -22,8 +23,8 @@ function App() {
         <Service />
       </Route>
 
-      <Route path="/blog">
-        <>blog</>
+      <Route path="/work">
+        <Projects />
       </Route>
 
       <Route path="/contact">
