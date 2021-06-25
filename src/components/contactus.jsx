@@ -55,7 +55,7 @@ function ContactUs(){
 							and I want to discuss about a project. You can contact me through email at
 							<input autocomplete="off" className="inputs" name="email" placeholder="Your email" onChange={(event) => updateEmail(event.target.value)} value={email}/>
 							or phone at
-							<input autocomplete="off" className="inputs" name="phone" placeholder="Your phone" onChange={(event) => updatePhone(event.target.value)} value={phone}/>.
+							<input autocomplete="off" className="inputs" name="phone" placeholder="Your phone" onChange={(event) => updatePhone(event.target.value)} value={phone}/>
 							<br />
 						</p>
 							<div className="container-fluid">
@@ -64,10 +64,10 @@ function ContactUs(){
 									
 										<div className="container-fluid">
 											<div className="row">
-												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{fontSize:"1.3em"}}><input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked1" /> Web dev.<br/></div>
-												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{fontSize:"1.3em"}}><input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked2" /> Graphic des<br/></div>
-												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{fontSize:"1.3em"}}><input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked3" /> Advertisement<br/></div>
-												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{fontSize:"1.3em"}}><input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked4" /> Profile Mgmt	</div>
+												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{fontSize:"1.3em"}}><input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked1" /> Web development<br/></div>
+												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{fontSize:"1.3em"}}><input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked2" /> Graphic design<br/></div>
+												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{fontSize:"1.3em"}}><input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked3" /> Marketing<br/></div>
+												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{fontSize:"1.3em"}}><input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked4" /> Virtual Assistance</div>
 											</div>
 										</div>
 								</div>
@@ -78,7 +78,7 @@ function ContactUs(){
 						</p>
 
 						<span style={{ marginTop:"1em"}}>
-						<span style={{fontSize:device==="mobile"?"0.5em":"1em"}} className="buttons" onClick={postInfo}> submit</span>
+						<span style={{fontSize:"1em"}} className="buttons" onClick={postInfo}>submit</span>
 						</span>
 							
 					</div>
