@@ -141,3 +141,7 @@ body{
   background: #0f0;
   border-radius: 10px;
 }
+
+img{
+	border-radius:10px;
+}
