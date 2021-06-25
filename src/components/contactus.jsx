@@ -1,8 +1,25 @@
-import {useState} from "react";
+import {useState, useEffect} from "react";
 import axios from "axios";
-import Sidebar from "./sidebar";
+import Sidebar from "./sidebar"
 
 function ContactUs(){
+
+	const [device, setDevice]=useState("laptop");
+
+	useEffect(() => {
+	
+		if(/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+		  setDevice("mobile");
+		} else {
+		  	setDevice("laptop");
+		}
+
+		const userAgent = navigator.userAgent.toLowerCase();
+		const isTablet = /(ipad|tablet|(android(?!.*mobile))|(windows(?!.*phone)(.*touch))|kindle|playbook|silk|(puffin(?!.*(IP|AP|WP))))/.test(userAgent);
+		if (isTablet){
+			setDevice("laptop")
+		}
+	}, []);
 
 	const [name, updateName] = useState("");
 	const [email, updateEmail] = useState("");
@@ -30,8 +47,8 @@ function ContactUs(){
 			<Sidebar />
 			<div style={{color:"white", height:"100vh", display: "flex", justifyContent: "center"}}>
 				<div className="container" style={{margin:"auto"}}>
-					<div className="row" style={{fontSize:"1em"}}>
-						<h1>Hire us</h1>
+					<div className="row" style={{fontSize:device==="mobile"?"1em":"1.5em"}}>
+						<h1><span style={{borderBottom:"2px solid #0f0"}}>Hire us</span></h1>
 						<p>
 							Hello, I am 
 							<input className="inputs" name="name" placeholder="Your Name" onChange={(event) => updateName(event.target.value)} value={name}/>
@@ -39,20 +56,32 @@ function ContactUs(){
 							<input className="inputs" name="email" placeholder="Your email" onChange={(event) => updateEmail(event.target.value)} value={email}/>
 							or phone at
 							<input className="inputs" name="phone" placeholder="Your phone" onChange={(event) => updatePhone(event.target.value)} value={phone}/>.
-							We want 
 							<br />
-							<input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked" /> Web Development<br/>
-							<input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked" /> Web Design<br/>
-							<input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked" /> Advertisement<br/>
-							<input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked" /> Profile Mgmt
-							<br />
-							services from you.
+						</p>
+							<div className="container-fluid">
+								<div className="row">
+									<div className="col-md-3">
+										We want these services from you.
+									</div>
+									<div className="col-md-9">
+										<div className="container-fluid">
+											<div className="row">
+												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{}}><input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked" /> Web Development<br/></div>
+												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{}}><input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked" /> Web Design<br/></div>
+												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{}}><input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked" /> Advertisement<br/></div>
+												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{}}><input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked" /> Profile Mgmt	</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						<p>
 							<br />
 							More about our project <textarea className="inputs" name="details" placeholder="Enter some details about your project" row="4" value={details} onChange={(event) => updateDetails(event.target.value)}/>
 						</p>
 
-						<span>
-						<span className="buttons" onClick={postInfo}> submit</span>
+						<span style={{ marginTop:"1em"}}>
+						<span style={{fontSize:device==="mobile"?"0.5em":"1em"}} className="buttons" onClick={postInfo}> submit</span>
 						</span>
 							
 					</div>
