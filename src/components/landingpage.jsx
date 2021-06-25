@@ -47,7 +47,7 @@ function Landingpage(){
 						<div className="row lp" style={{height:"100%"}}>
 							<div className="col-md-6 lp" style={{margin:"auto"}}>
 								<h1 style={{marginBottom:"20px"}} className="lp">Let Your Brand Breathe.</h1>
-								<span className="buttons lp" onClick={() => history.push("/service")}>Services</span>
+								<span className="buttons" onClick={() => history.push("/service")}>Services</span>
 							</div>
 						</div>
 					</div>
