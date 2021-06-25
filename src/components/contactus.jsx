@@ -47,7 +47,7 @@ function ContactUs(){
 			<Sidebar />
 			<div style={{color:"white", height:"100vh", display: "flex", justifyContent: "center"}}>
 				<div className="container" style={{margin:"auto"}}>
-					<div className="row" style={{fontSize:device==="mobile"?"1em":"1.5em"}}>
+					<div className="row" style={{fontSize:device==="mobile"?"0.9em":"1.5em"}}>
 						<h1><span style={{borderBottom:"2px solid #0f0"}}>Hire us</span></h1>
 						<p>
 							Hello, I am 
@@ -60,19 +60,16 @@ function ContactUs(){
 						</p>
 							<div className="container-fluid">
 								<div className="row">
-									<div className="col-md-3">
 										We want these services from you.
-									</div>
-									<div className="col-md-9">
+									
 										<div className="container-fluid">
 											<div className="row">
-												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{}}><input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked" /> Web Development<br/></div>
-												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{}}><input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked" /> Web Design<br/></div>
-												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{}}><input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked" /> Advertisement<br/></div>
-												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{}}><input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked" /> Profile Mgmt	</div>
+												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{}}><input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked1" /> Web dev.<br/></div>
+												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{}}><input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked2" /> Graphic des<br/></div>
+												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{}}><input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked3" /> Advertisement<br/></div>
+												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{}}><input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked4" /> Profile Mgmt	</div>
 											</div>
 										</div>
-									</div>
 								</div>
 							</div>
 						<p>
