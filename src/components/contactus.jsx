@@ -49,13 +49,13 @@ function ContactUs(){
 				<div className="container" style={{margin:"auto"}}>
 					<div className="row" style={{fontSize:device==="mobile"?"0.9em":"1.5em"}}>
 						<h1><span style={{borderBottom:"2px solid #0f0"}}>Hire us</span></h1>
-						<p>
+						<p style={{marginTop:"1em"}}>
 							Hello, I am 
-							<input className="inputs" name="name" placeholder="Your Name" onChange={(event) => updateName(event.target.value)} value={name}/>
+							<input autocomplete="off" className="inputs" name="name" placeholder="Your Name" onChange={(event) => updateName(event.target.value)} value={name}/>
 							and I want to discuss about a project. You can contact me through email at
-							<input className="inputs" name="email" placeholder="Your email" onChange={(event) => updateEmail(event.target.value)} value={email}/>
+							<input autocomplete="off" className="inputs" name="email" placeholder="Your email" onChange={(event) => updateEmail(event.target.value)} value={email}/>
 							or phone at
-							<input className="inputs" name="phone" placeholder="Your phone" onChange={(event) => updatePhone(event.target.value)} value={phone}/>.
+							<input autocomplete="off" className="inputs" name="phone" placeholder="Your phone" onChange={(event) => updatePhone(event.target.value)} value={phone}/>.
 							<br />
 						</p>
 							<div className="container-fluid">
@@ -74,7 +74,7 @@ function ContactUs(){
 							</div>
 						<p>
 							<br />
-							More about our project <textarea className="inputs" name="details" placeholder="Enter some details about your project" row="4" value={details} onChange={(event) => updateDetails(event.target.value)}/>
+							More about our project <textarea className="inputs" name="details" placeholder="Enter a few details" value={details} onChange={(event) => updateDetails(event.target.value)}/>
 						</p>
 
 						<span style={{ marginTop:"1em"}}>
