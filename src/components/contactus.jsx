@@ -64,10 +64,10 @@ function ContactUs(){
 									
 										<div className="container-fluid">
 											<div className="row">
-												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{}}><input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked1" /> Web dev.<br/></div>
-												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{}}><input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked2" /> Graphic des<br/></div>
-												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{}}><input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked3" /> Advertisement<br/></div>
-												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{}}><input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked4" /> Profile Mgmt	</div>
+												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{fontSize:"1.3em"}}><input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked1" /> Web dev.<br/></div>
+												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{fontSize:"1.3em"}}><input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked2" /> Graphic des<br/></div>
+												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{fontSize:"1.3em"}}><input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked3" /> Advertisement<br/></div>
+												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{fontSize:"1.3em"}}><input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked4" /> Profile Mgmt	</div>
 											</div>
 										</div>
 								</div>
