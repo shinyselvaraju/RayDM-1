@@ -60,7 +60,7 @@ function ContactUs(){
 						</p>
 							<div className="container-fluid">
 								<div className="row">
-										We want these services from you.
+										<p>We want these services from you.</p>
 									
 										<div className="container-fluid">
 											<div className="row">
