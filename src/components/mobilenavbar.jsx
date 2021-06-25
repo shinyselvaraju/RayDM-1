@@ -14,6 +14,7 @@ function MobileNavbar(){
 		{menu?<div id="mobilenavbar" style={{zIndex:"100"}}>
 				<div>
 					<NavLink className="nav-link color1" exact to="/home">Home</NavLink>
+					<NavLink className="nav-link color1" exact to="/about">About</NavLink>
 			        <NavLink className="nav-link color1" exact to="/work">Work</NavLink>
 			        <NavLink className="nav-link color1" exact to="/service">Services</NavLink>
 			        <NavLink className="nav-link color1" exact to="/contact">Contact</NavLink>

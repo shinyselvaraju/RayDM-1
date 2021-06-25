@@ -11,7 +11,8 @@ function Work(){
 					<div className="col-md-6" style={{margin:"auto"}}>
 						<div className="container">
 							<h1>We are the best at what we do</h1>
-							<span className="buttons">Our work</span>
+							<p>Look what people have to say of us</p>
+							<span className="buttons">Testimonials</span>
 						</div>
 					</div>
 				</div>
