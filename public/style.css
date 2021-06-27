@@ -22,7 +22,7 @@ body{
 	height:100vh;
 	width:100vw;
 	color:white;
-	background-image: url("landing2.png");
+	background-image: url("landing4.png");
 	background-repeat: no-repeat;
 	background-size: cover
 }
@@ -109,7 +109,8 @@ body{
 #footer{
 	color:white;
 	margin-top:4em;
-	/*text-align: center;*/
+	padding-top: 2em;
+	background-color:#00222A;
 }
 
 .steasers{

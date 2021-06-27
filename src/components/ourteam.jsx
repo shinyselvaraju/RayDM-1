@@ -1,5 +1,6 @@
 import Sidebar from "./sidebar";
 import {useEffect} from "react";
+import Footer from "./footer"
 
 function AboutUs(){
 
@@ -73,6 +74,7 @@ function AboutUs(){
 				</div>
 			</div>
 		</div>
+		<Footer />
 		</div>
 	)
 }
