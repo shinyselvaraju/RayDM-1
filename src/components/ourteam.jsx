@@ -30,7 +30,7 @@ function AboutUs(){
 	return(
 		<div>
 		<Sidebar />
-		<div style={device==="laptop"?{minHeight:"45vh", display:"flex", alignItems:"flex-end", textAlign:"center"}:tablet?{minHeight:"25vh", display:"flex", alignItems:"flex-center"}:{minHeight:"15vh", display:"flex", alignItems:"flex-end"}}>
+		<div style={device==="laptop"?{minHeight:"48vh", display:"flex", alignItems:"flex-end", textAlign:"center"}:tablet?{minHeight:"25vh", display:"flex", alignItems:"flex-center"}:{minHeight:"15vh", display:"flex", alignItems:"flex-end"}}>
 				<div style={{color:"white", width:"97vw"}}>
 					<img src="about.png" style={{maxWidth:"100vw"}}></img>
 				</div>
