@@ -1,35 +1,40 @@
 import Sidebar from "./sidebar";
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 import Footer from "./footer"
 
 function AboutUs(){
 
+
+	const [device, setDevice]=useState("laptop");
+	const [tablet, setTablet] = useState(false);
+
 	useEffect(() => {
 	  window.scrollTo(0, 0);
+
+
+	  if(/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+		  setDevice("mobile");
+		} else {
+		  	setDevice("laptop");
+		}
+
+		const userAgent = navigator.userAgent.toLowerCase();
+		const isTablet = /(ipad|tablet|(android(?!.*mobile))|(windows(?!.*phone)(.*touch))|kindle|playbook|silk|(puffin(?!.*(IP|AP|WP))))/.test(userAgent);
+		if (isTablet){
+			setTablet(true);
+			setDevice("mobile");
+		}
+
 	}, []);
 
 	return(
 		<div>
 		<Sidebar />
-		<div style={{minHeight:"45vh", display:"flex", alignItems:"flex-end", textAlign:"center"}}>
-				<div style={{color:"white", width:"100vw"}}>
-					<div className="container">
-			 			<div className="row">
-			 				<div className="col-md-6">
-			 					An image goes here
-			 				</div>
-			 				<div className="col-md-6" style={{textAlign:"left"}}>
-			 					<h2>
-			 						We are Shit
-			 					</h2>
-			 					<p>
-			 						And guess what, we are truly a bunch of lazy shit heads
-			 					</p>
-			 				</div>
-			 			</div>
-				 	</div>
-			 </div>
-			</div>
+		<div style={device==="laptop"?{minHeight:"45vh", display:"flex", alignItems:"flex-end", textAlign:"center"}:tablet?{minHeight:"25vh", display:"flex", alignItems:"flex-center"}:{minHeight:"15vh", display:"flex", alignItems:"flex-end"}}>
+				<div style={{color:"white", width:"97vw"}}>
+					<img src="about.png" style={{maxWidth:"100vw"}}></img>
+				</div>
+		</div>
 		<div className="container" style={{color:"white"}}>
 			<h2>
 				Our Boring Story
@@ -43,32 +48,32 @@ function AboutUs(){
 		<div className="container">
 			<div className="row">
 				<div className="col-md-4 col-sm-6">
-					<img src={"webdesign.jpg"} style={{height:"100%", width:"100%", maxHeight:"35vh"}}/>
+					<img src={"webdesign.jpg"} style={{height:"100px", width:"100px", maxHeight:"25vh", borderRadius:"100%"}}/>
 					<h3 className="Heading">Bajra</h3>
 					<p>CEO, Web Developer</p>
 				</div>
 				<div className="col-md-4 col-sm-6">
-					<img src={"webdesign.jpg"} style={{height:"100%", width:"100%", maxHeight:"35vh"}}/>
+					<img src={"webdesign.jpg"} style={{height:"100%", width:"100%", maxHeight:"25vh", borderRadius:"150px"}}/>
 					<h3 className="Heading">Bajra</h3>
 					<p>CEO, Web Developer</p>
-				</div>
-				<div className="col-md-4 col-sm-6">
-					<img src={"webdesign.jpg"} style={{height:"100%", width:"100%", maxHeight:"35vh"}}/>
+				</div><div className="col-md-4 col-sm-6">
+					<img src={"webdesign.jpg"} style={{height:"100%", width:"100%", maxHeight:"25vh", borderRadius:"150px"}}/>
 					<h3 className="Heading">Bajra</h3>
 					<p>CEO, Web Developer</p>
-				</div>
-				<div className="col-md-4 col-sm-6">
-					<img src={"webdesign.jpg"} style={{height:"100%", width:"100%", maxHeight:"35vh"}}/>
+				</div><div className="col-md-4 col-sm-6">
+					<img src={"webdesign.jpg"} style={{height:"100%", width:"100%", maxHeight:"25vh", borderRadius:"150px"}}/>
 					<h3 className="Heading">Bajra</h3>
 					<p>CEO, Web Developer</p>
-				</div>
-				<div className="col-md-4 col-sm-6">
-					<img src={"webdesign.jpg"} style={{height:"100%", width:"100%", maxHeight:"35vh"}}/>
+				</div><div className="col-md-4 col-sm-6">
+					<img src={"webdesign.jpg"} style={{height:"100%", width:"100%", maxHeight:"25vh", borderRadius:"150px"}}/>
 					<h3 className="Heading">Bajra</h3>
 					<p>CEO, Web Developer</p>
-				</div>
-				<div className="col-md-4 col-sm-6">
-					<img src={"webdesign.jpg"} style={{height:"100%", width:"100%", maxHeight:"35vh"}}/>
+				</div><div className="col-md-4 col-sm-6">
+					<img src={"webdesign.jpg"} style={{height:"100%", width:"100%", maxHeight:"25vh", borderRadius:"150px"}}/>
+					<h3 className="Heading">Bajra</h3>
+					<p>CEO, Web Developer</p>
+				</div><div className="col-md-4 col-sm-6">
+					<img src={"webdesign.jpg"} style={{height:"100%", width:"100%", maxHeight:"25vh", borderRadius:"150px"}}/>
 					<h3 className="Heading">Bajra</h3>
 					<p>CEO, Web Developer</p>
 				</div>

@@ -2,7 +2,7 @@ import Sidebar from "./sidebar";
 import WorkCard from "./workcard";
 import Footer from "./footer";
 
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 
 const works=[
 	{
@@ -54,31 +54,33 @@ const works=[
 
 function Projects(){
 
+	const [device, setDevice]=useState("laptop");
+	const [tablet, setTablet] = useState(false);
+
 	useEffect(() => {
 	  window.scrollTo(0, 0);
+
+	  if(/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+		  setDevice("mobile");
+		} else {
+		  	setDevice("laptop");
+		}
+
+		const userAgent = navigator.userAgent.toLowerCase();
+		const isTablet = /(ipad|tablet|(android(?!.*mobile))|(windows(?!.*phone)(.*touch))|kindle|playbook|silk|(puffin(?!.*(IP|AP|WP))))/.test(userAgent);
+		if (isTablet){
+			setTablet(true);
+			setDevice("mobile");
+		}
 	}, []);
 
 	return(
 		<div>
 			<Sidebar/>
-			<div style={{minHeight:"45vh", display:"flex", alignItems:"flex-end", textAlign:"center"}}>
-				<div style={{color:"white", width:"100vw"}}>
-					<div className="container">
-			 			<div className="row">
-			 				<div className="col-md-6">
-			 					An image goes here
-			 				</div>
-			 				<div className="col-md-6" style={{textAlign:"left"}}>
-			 					<h2>
-			 						We've done all of these Shit
-			 					</h2>
-			 					<p>
-			 						And guess what, we were so lazy about doing this that we did it the best way we can in our first try itself.
-			 					</p>
-			 				</div>
-			 			</div>
-				 	</div>
-			 </div>
+			<div style={device==="laptop"?{minHeight:"45vh", display:"flex", alignItems:"flex-end", textAlign:"center"}:tablet?{minHeight:"25vh", display:"flex", alignItems:"flex-center"}:{minHeight:"15vh", display:"flex", alignItems:"flex-end"}}>
+				<div style={{color:"white", width:"97vw"}}>
+					<img src="work.png" style={{maxWidth:"100vw"}}></img>
+				</div>
 			</div>
 			<div className="container" style={{marginTop:"2em"}}>
 	 			<div className="row">

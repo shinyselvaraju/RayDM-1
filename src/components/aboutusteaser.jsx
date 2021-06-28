@@ -8,7 +8,7 @@ function AboutusTeaser(){
 		<div id="aboutusteaser" className="container-fluid">
 			<div className="row">
 				<div className="col-md-6">
-					<img src="r.jpeg" id="kryptonite"/>					
+					<img src="questio.jpg" id="kryptonite"/>					
 				</div>
 				<div className="col-md-6" style={{margin:"auto"}}>
 					<div className="container">

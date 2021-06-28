@@ -29,8 +29,7 @@ function Service(){
 	return(
 		<div>
 			<Sidebar/>
-			{console.log(device)}
-			<div style={device==="laptop"?{minHeight:"45vh", display:"flex", alignItems:"flex-end", textAlign:"center"}:tablet?{minHeight:"25vh", display:"flex", alignItems:"flex-center"}:{minHeight:"15vh", display:"flex", alignItems:"flex-end"}}>
+			<div style={device==="laptop"?{minHeight:"48vh", display:"flex", alignItems:"flex-end", textAlign:"center"}:tablet?{minHeight:"25vh", display:"flex", alignItems:"flex-center"}:{minHeight:"15vh", display:"flex", alignItems:"flex-end"}}>
 				<div style={{color:"white", width:"97vw"}}>
 					<img src="services.png" style={{maxWidth:"100vw"}}></img>
 			 </div>
@@ -38,22 +37,22 @@ function Service(){
 				 	<div className="container" style={{marginTop:"2em"}}>
 			 			<div className="row">
 			 				<div className="col-md-4 col-sm-6">
-			 					<WorkCard title="Web Design"/>
+			 					<WorkCard title="Web Development" img="webdev.jpg"/>
 			 				</div>
 			 				<div className="col-md-4 col-sm-6">
-			 					<WorkCard title="Graphic Design"/>
+			 					<WorkCard title="Graphic Design" img="graphic.jpg"/>
 			 				</div>
 			 				<div className="col-md-4 col-sm-6">
-			 					<WorkCard title="Marketing"/>
+			 					<WorkCard title="Marketing" img="marketing.jpg"/>
 			 				</div>
 			 				<div className="col-md-4 col-sm-6">
-			 					<WorkCard title="Virtual Assistance"/>
+			 					<WorkCard title="Virtual Assistance" img="va.jpg"/>
 			 				</div>
 			 				<div className="col-md-4 col-sm-6">
-			 					<WorkCard title="Web Develoment"/>
+			 					<WorkCard title="Branding" img="brand.png"/>
 			 				</div>
 			 				<div className="col-md-4 col-sm-6">
-			 					<WorkCard title="Content Creation"/>
+			 					<WorkCard title="Content Creation" img="content.jpg"/>
 			 				</div>
 			 			</div>
 			 		</div>
