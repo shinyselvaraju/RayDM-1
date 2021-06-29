@@ -37,6 +37,7 @@ function ContactUs(){
 	function postInfo(){
 		const data = {name: name, email: email, phone: phone, details: details, wd:wd, gd: gd, mar:mar, va:va};
 		console.log(data);
+		axios.defaults.headers.post['Content-Type'] = 'application/json';
 		axios.post("https://formsubmit.co/svaibavbajra@gmail.com", data)
 		.then((res) => {alert("Thanks for reaching out to us. We'll get back to you shortly")})
 		.catch((err) => {});
