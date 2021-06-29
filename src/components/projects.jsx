@@ -128,18 +128,19 @@ function Projects(){
 				</div>
 			</div>
 			<div className="container">
+				<h2 style={{color:"white"}}>Each project is tailored to perfection with close attention to the details by our members who are skilled professionals in their fields.</h2>
 	 			<div className="row" id="webdev" >
-	 				<h1 style={{marginTop:"2em"}}>Web Development</h1>
+	 				<h1 style={{marginTop:"2em", color:"white"}}>Web Development</h1>
 	 				{works.map((work) =>(work.title==="Web Development"?<div className="col-lg-4 col-md-6 col-sm-6" style={tile===work.id||tile===0?{}:{opacity:"0.3"}} onMouseOver={()=>setTile(work.id)} onMouseOut={()=>setTile(0)}><WorkCard img={work.img} title={work.name} url={work.url}/></div>:<div />))
 	 				}
 	 			</div>
 	 			<div className="row" id="graphicdes" >
-	 				<h1 style={{marginTop:"2em"}}>Graphic Design</h1>
+	 				<h1 style={{marginTop:"2em", color:"white"}}>Graphic Design</h1>
 	 				{works.map((work) =>(work.title==="Graphic Design"?<div className="col-lg-4 col-md-6 col-sm-6" style={tile===work.id||tile===0?{}:{opacity:"0.3"}} onMouseOver={()=>setTile(work.id)} onMouseOut={()=>setTile(0)}><WorkCard img={work.img} title={work.name} url={work.url}/></div>:<div />))
 	 				}
 	 			</div>
 	 			<div className="row" id="marketingig" >
-	 				<h1 style={{marginTop:"2em"}}>Social Media</h1>
+	 				<h1 style={{marginTop:"2em", color:"white"}}>Social Media</h1>
 	 				{works.map((work) =>(work.title==="Social Media"?<div className="col-lg-4 col-md-6 col-sm-6" style={tile===work.id||tile===0?{}:{opacity:"0.3"}} onMouseOver={()=>setTile(work.id)} onMouseOut={()=>setTile(0)}><WorkCard img={work.img} title={work.name} url={work.url}/></div>:<div />))
 	 				}
 	 			</div>

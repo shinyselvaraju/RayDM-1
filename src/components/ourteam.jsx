@@ -40,37 +40,38 @@ function AboutUs(){
 				Our Boring Story
 			</h2>
 			<p>
-				lorem ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris sollicitudin dignissim. Phasellus ultrices tellus eget ipsum ornare molesti
-				ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris sollicitudin dignissim. Phasellus ultrices tellus eget ipsum ornare molesti
-				ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris sollicitudin dignissim. Phasellus ultrices tellus eget ipsum ornare molesti 
+				Hey There!
+RayDM is a creative design company that offers services like website development, Marketing, and visual assistance required with a personal touch. The founders Shiny Selvaraj, Vaibav, and Charan and their teamwork together to design extraordinary work for the people that believe in them. We work with exceptional talent who intend to provoke a sense of inspiration and awe in the person marveling at our designs. As a small startup that is rapidly growing, we wish to empower other small start-ups by helping them grow their businesses with our smart marketing and innovative content.
+At RayDM we Love to Create, Customize, and Discover.
+	
 				<hr />
 			</p>
 		</div>
 		<div className="container" style={{color:"white"}}>
 			<h1 style={{marginTop:"2em", marginBottom:"1em"}}>Meet our Team</h1>
-			<div className="row">
-				<div className="col-lg-4 col-md-6 col-sm-6" style={{margin:"1em 0"}}>
-					<img src={"shinyn.png"} style={{height:"100%", width:"100%", maxHeight:"35vh"}}/>
+			<div className="row" style={{textAlign:"center"}}>
+				<div className="col-lg-4 col-md-6 col-sm-6" style={{margin:"1em 0", textAlign:"center"}}>
+					<img src={"shinye.jpeg"} style={{height:"100%", maxHeight:"35vh"}}/>
 					<h3 className="Heading">Shiny Selvaraju</h3>
 					<p>Lead Web Developer and loves meeting new people</p>
 				</div>
 				<div className="col-lg-4 col-md-6 col-sm-6" style={{margin:"1em 0"}}>
-					<img src={"webdesign.jpg"} style={{height:"100%", width:"100%", maxHeight:"35vh"}}/>
+					<img src={"webdesign.jpg"} style={{height:"100%", maxHeight:"35vh"}}/>
 					<h3 className="Heading">Charan</h3>
 					<p>Marketing and Instagram Strategist while enjoying his cuppa tea</p>
 				</div>
 				<div className="col-lg-4 col-md-6 col-sm-6" style={{margin:"1em 0"}}>
-					<img src={"webdesign.jpg"} style={{height:"100%", width:"100%", maxHeight:"35vh"}}/>
+					<img src={"webdesign.jpg"} style={{height:"100%", maxHeight:"35vh"}}/>
 					<h3 className="Heading">Vasantha</h3>
 					<p>Graphic designer from NIFT and wants anything japanese or anime</p>
 				</div>
 				<div className="col-lg-4 col-md-6 col-sm-6" style={{margin:"1em 0"}}>
-					<img src={"webdesign.jpg"} style={{height:"100%", width:"100%", maxHeight:"35vh"}}/>
+					<img src={"webdesign.jpg"} style={{height:"100%", maxHeight:"35vh"}}/>
 					<h3 className="Heading">Bajra</h3>
 					<p>Web Developer and a random dood from the moon</p>
 				</div>
 				<div className="col-lg-4 col-md-6 col-sm-6" style={{margin:"1em 0"}}>
-					<img src={"webdesign.jpg"} style={{height:"100%", width:"100%", maxHeight:"35vh"}}/>
+					<img src={"webdesign.jpg"} style={{height:"100%", maxHeight:"35vh"}}/>
 					<h3 className="Heading">Sagar</h3>
 					<p>Graphic designer and video editor from the land of rajputs</p>
 				</div>
