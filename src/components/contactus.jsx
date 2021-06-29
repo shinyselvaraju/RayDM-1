@@ -25,13 +25,17 @@ function ContactUs(){
 	const [email, updateEmail] = useState("");
 	const [phone, updatePhone] = useState("");
 	const [details, updateDetails] = useState("");
-
-	function setName(event){
-		updateName(event.target.value)
-	}
+	const [wd, updatewd] = useState(false);
+	const [gd, updategd] = useState(false);
+	const [mar, updatemar] = useState(false);
+	const [va, updateva] = useState(false);	
+// 
+// 	function setName(event){
+// 		updateName(event.target.value)
+// 	}
 
 	function postInfo(){
-		const data = {name: name, email: email, phone: phone, details: details};
+		const data = {name: name, email: email, phone: phone, details: details, wd:wd, gd: gd, mar:mar, va:va};
 		console.log(data);
 		axios.post("https://formsubmit.co/svaibavbajra@gmail.com", data)
 		.then((res) => {alert("Thanks for reaching out to us. We'll get back to you shortly")})
@@ -40,6 +44,10 @@ function ContactUs(){
 		updateDetails("");
 		updateEmail("");
 		updatePhone("");
+		updatewd(false);
+		updategd(false);
+		updatemar(false);
+		updateva(false);		
 	}
 
 	return(
@@ -64,10 +72,10 @@ function ContactUs(){
 									
 										<div className="container-fluid">
 											<div className="row">
-												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{fontSize:"1.3em"}}><input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked1" /> Web development<br/></div>
-												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{fontSize:"1.3em"}}><input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked2" /> Graphic design<br/></div>
-												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{fontSize:"1.3em"}}><input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked3" /> Marketing<br/></div>
-												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{fontSize:"1.3em"}}><input className="form-check-input" onChange={(event) => console.log(event.target.checked)}type="checkbox" value="" id="flexCheckChecked4" /> Virtual Assistance</div>
+												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{fontSize:"1.3em"}}><input className="form-check-input" onChange={(event) => updatewd(event.target.checked)} type="checkbox" value={wd} id="flexCheckChecked1" /> Web development<br/></div>
+												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{fontSize:"1.3em"}}><input className="form-check-input" onChange={(event) => updategd(event.target.checked)} type="checkbox" value={gd} id="flexCheckChecked2" /> Graphic design<br/></div>
+												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{fontSize:"1.3em"}}><input className="form-check-input" onChange={(event) => updatemar(event.target.checked)} type="checkbox" value={mar} id="flexCheckChecked3" /> Marketing<br/></div>
+												<div className="col-md-6" style={device==="laptop"?{fontSize:"1em"}:{fontSize:"1.3em"}}><input className="form-check-input" onChange={(event) => updateva(event.target.checked)} type="checkbox" value={va} id="flexCheckChecked4" /> Virtual Assistance</div>
 											</div>
 										</div>
 								</div>

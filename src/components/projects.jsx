@@ -49,15 +49,45 @@ const works=[
 	},
 	{
 		img:"webdesign.jpg",
-		title: "branding",
+		title: "Graphic Design",
 		url:"",
 		id:8
 	},
 	{
 		img:"webdesign.jpg",
-		title: "branding",
+		title: "Graphic Design",
 		url:"",
 		id:9
+	},
+	{
+		img:"webdesign.jpg",
+		title: "Graphic Design",
+		url:"",
+		id:10
+	},
+	{
+		img:"webdesign.jpg",
+		title: "Social Media",
+		url:"",
+		id:11
+	},
+	{
+		img:"webdesign.jpg",
+		title: "Social Media",
+		url:"",
+		id:12
+	},
+	{
+		img:"webdesign.jpg",
+		title: "Social Media",
+		url:"",
+		id:13
+	},
+	{
+		img:"webdesign.jpg",
+		title: "Social Media",
+		url:"",
+		id:14
 	}
 ]
 
@@ -92,15 +122,20 @@ function Projects(){
 					<img src="work.png" style={{maxWidth:"100vw"}}></img>
 				</div>
 			</div>
-			<div className="container" style={{marginTop:"2em"}}>
-	 			<div className="row" id="webdev">
-	 				<h1>Web Development</h1>
+			<div className="container" >
+	 			<div className="row" id="webdev" >
+	 				<h1 style={{marginTop:"2em"}}>Web Development</h1>
 	 				{works.map((work) =>(work.title==="Web Development"?<div className="col-lg-4 col-md-6 col-sm-6" style={tile===work.id||tile===0?{}:{opacity:"0.3"}} onMouseOver={()=>setTile(work.id)} onMouseOut={()=>setTile(0)}><WorkCard img={work.img} title={work.title}/></div>:<div />))
 	 				}
 	 			</div>
-	 			<div className="row" id="graphicdes">
-	 				<h1>Graphic Design</h1>
+	 			<div className="row" id="graphicdes" >
+	 				<h1 style={{marginTop:"2em"}}>Graphic Design</h1>
 	 				{works.map((work) =>(work.title==="Graphic Design"?<div className="col-lg-4 col-md-6 col-sm-6" style={tile===work.id||tile===0?{}:{opacity:"0.3"}} onMouseOver={()=>setTile(work.id)} onMouseOut={()=>setTile(0)}><WorkCard img={work.img} title={work.title}/></div>:<div />))
+	 				}
+	 			</div>
+	 			<div className="row" id="marketingig" >
+	 				<h1 style={{marginTop:"2em"}}>Social Media</h1>
+	 				{works.map((work) =>(work.title==="Social Media"?<div className="col-lg-4 col-md-6 col-sm-6" style={tile===work.id||tile===0?{}:{opacity:"0.3"}} onMouseOver={()=>setTile(work.id)} onMouseOut={()=>setTile(0)}><WorkCard img={work.img} title={work.title}/></div>:<div />))
 	 				}
 	 			</div>
 			 </div>
