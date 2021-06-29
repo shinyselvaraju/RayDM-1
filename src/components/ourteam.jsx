@@ -51,17 +51,17 @@ At RayDM we Love to Create, Customize, and Discover.
 			<h1 style={{marginTop:"2em", marginBottom:"1em"}}>Meet our Team</h1>
 			<div className="row" style={{textAlign:"center"}}>
 				<div className="col-lg-4 col-md-6 col-sm-6" style={{margin:"1em 0", textAlign:"center"}}>
-					<img src={"shinye.jpeg"} style={{height:"100%", maxHeight:"35vh"}}/>
+					<img src={"shiny6.jpeg"} style={{height:"100%", maxHeight:"35vh"}}/>
 					<h3 className="Heading">Shiny Selvaraju</h3>
 					<p>Lead Web Developer and loves meeting new people</p>
 				</div>
 				<div className="col-lg-4 col-md-6 col-sm-6" style={{margin:"1em 0"}}>
-					<img src={"webdesign.jpg"} style={{height:"100%", maxHeight:"35vh"}}/>
+					<img src={"charan.jpeg"} style={{height:"100%", maxHeight:"35vh"}}/>
 					<h3 className="Heading">Charan</h3>
 					<p>Marketing and Instagram Strategist while enjoying his cuppa tea</p>
 				</div>
 				<div className="col-lg-4 col-md-6 col-sm-6" style={{margin:"1em 0"}}>
-					<img src={"webdesign.jpg"} style={{height:"100%", maxHeight:"35vh"}}/>
+					<img src={"vasantha.jpeg"} style={{height:"100%", maxHeight:"35vh"}}/>
 					<h3 className="Heading">Vasantha</h3>
 					<p>Graphic designer from NIFT and wants anything japanese or anime</p>
 				</div>
@@ -74,16 +74,6 @@ At RayDM we Love to Create, Customize, and Discover.
 					<img src={"webdesign.jpg"} style={{height:"100%", maxHeight:"35vh"}}/>
 					<h3 className="Heading">Sagar</h3>
 					<p>Graphic designer and video editor from the land of rajputs</p>
-				</div>
-				<div className="col-lg-4 col-md-6 col-sm-6" style={{margin:"1em 0"}}>
-					<img src={"webdesign.jpg"} style={{height:"100%", width:"100%", maxHeight:"35vh"}}/>
-					<h3 className="Heading">Rishab</h3>
-					<p>Social media Manager *awesome bgm intensifies*</p>
-				</div>
-				<div className="col-lg-4 col-md-6 col-sm-6" style={{margin:"1em 0"}}>
-					<img src={"webdesign.jpg"} style={{height:"100%", width:"100%", maxHeight:"35vh"}}/>
-					<h3 className="Heading">Ariyana</h3>
-					<p>Social media Manager *hello i am ariyana*</p>
 				</div>
 			</div>
 		</div>
