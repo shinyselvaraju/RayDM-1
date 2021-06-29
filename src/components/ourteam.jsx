@@ -50,7 +50,7 @@ function AboutUs(){
 			<h1 style={{marginTop:"2em", marginBottom:"1em"}}>Meet our Team</h1>
 			<div className="row">
 				<div className="col-lg-4 col-md-6 col-sm-6" style={{margin:"1em 0"}}>
-					<img src={"webdesign.jpg"} style={{height:"100%", width:"100%", maxHeight:"35vh"}}/>
+					<img src={"shinyn.png"} style={{height:"100%", width:"100%", maxHeight:"35vh"}}/>
 					<h3 className="Heading">Shiny Selvaraju</h3>
 					<p>Lead Web Developer and loves meeting new people</p>
 				</div>
