@@ -7,32 +7,37 @@ import {useEffect, useState} from "react";
 const works=[
 	{
 		img:"archer.jpeg",
+		name:"Archer Events",
 		title: "Web Development",
-		url:"",
+		url:"http://archerevents.in/",
 		id:1
 	},
 	{
 		img:"idiotic.jpeg",
+		name:"Idiotic Marketing",
 		title: "Web Development",
-		url:"",
+		url:"https://sxinyy.github.io/idiotic_marketing/",
 		id:2
 	},
 	{
 		img:"sumit.jpeg",
+		name:"Sumit Mathur",
 		title: "Web Development",
-		url:"",
+		url:"https://sxinyy.github.io/sumit_dancer/",
 		id:3
 	},
 	{
 		img:"topsea.jpeg",
+		name:"TopSea",
 		title: "Web Development",
-		url:"",
+		url:"https://bajra6.github.io/adityayadav/",
 		id:4
 	},
 	{
 		img:"shine.jpeg",
+		name:"Shine Industry",
 		title: "Web Development",
-		url:"",
+		url:"https://www.shineindustry.in/",
 		id:5
 	},
 	{
@@ -122,20 +127,20 @@ function Projects(){
 					<img src="work.png" style={{maxWidth:"100vw"}}></img>
 				</div>
 			</div>
-			<div className="container" >
+			<div className="container">
 	 			<div className="row" id="webdev" >
 	 				<h1 style={{marginTop:"2em"}}>Web Development</h1>
-	 				{works.map((work) =>(work.title==="Web Development"?<div className="col-lg-4 col-md-6 col-sm-6" style={tile===work.id||tile===0?{}:{opacity:"0.3"}} onMouseOver={()=>setTile(work.id)} onMouseOut={()=>setTile(0)}><WorkCard img={work.img} title={work.title}/></div>:<div />))
+	 				{works.map((work) =>(work.title==="Web Development"?<div className="col-lg-4 col-md-6 col-sm-6" style={tile===work.id||tile===0?{}:{opacity:"0.3"}} onMouseOver={()=>setTile(work.id)} onMouseOut={()=>setTile(0)}><WorkCard img={work.img} title={work.name} url={work.url}/></div>:<div />))
 	 				}
 	 			</div>
 	 			<div className="row" id="graphicdes" >
 	 				<h1 style={{marginTop:"2em"}}>Graphic Design</h1>
-	 				{works.map((work) =>(work.title==="Graphic Design"?<div className="col-lg-4 col-md-6 col-sm-6" style={tile===work.id||tile===0?{}:{opacity:"0.3"}} onMouseOver={()=>setTile(work.id)} onMouseOut={()=>setTile(0)}><WorkCard img={work.img} title={work.title}/></div>:<div />))
+	 				{works.map((work) =>(work.title==="Graphic Design"?<div className="col-lg-4 col-md-6 col-sm-6" style={tile===work.id||tile===0?{}:{opacity:"0.3"}} onMouseOver={()=>setTile(work.id)} onMouseOut={()=>setTile(0)}><WorkCard img={work.img} title={work.name} url={work.url}/></div>:<div />))
 	 				}
 	 			</div>
 	 			<div className="row" id="marketingig" >
 	 				<h1 style={{marginTop:"2em"}}>Social Media</h1>
-	 				{works.map((work) =>(work.title==="Social Media"?<div className="col-lg-4 col-md-6 col-sm-6" style={tile===work.id||tile===0?{}:{opacity:"0.3"}} onMouseOver={()=>setTile(work.id)} onMouseOut={()=>setTile(0)}><WorkCard img={work.img} title={work.title}/></div>:<div />))
+	 				{works.map((work) =>(work.title==="Social Media"?<div className="col-lg-4 col-md-6 col-sm-6" style={tile===work.id||tile===0?{}:{opacity:"0.3"}} onMouseOver={()=>setTile(work.id)} onMouseOut={()=>setTile(0)}><WorkCard img={work.img} title={work.name} url={work.url}/></div>:<div />))
 	 				}
 	 			</div>
 			 </div>

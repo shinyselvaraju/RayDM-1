@@ -1,7 +1,8 @@
 import Sidebar from "./sidebar";
 import WorkCard from "./workcard";
 import Footer from "./footer";
-import {useEffect, useState} from "react"
+import {useEffect, useState} from "react";
+import {useHistory} from "react-router-dom";
 
 
 function Service(){
@@ -38,10 +39,10 @@ function Service(){
 				 	<div className="container" style={{marginTop:"2em"}}>
 			 			<div className="row">
 			 				<div className="col-lg-4 col-md-6 col-sm-6" style={tile===1||tile===0?{}:{opacity:"0.3"}} onMouseOver={()=>setTile(1)} onMouseOut={()=>setTile(0)}>
-			 					<WorkCard title="Web Development" img="webdev.jpg" link=""/>
+			 					<WorkCard title="Web Development" img="webdev.jpg" url="/work#webdev"/>
 			 				</div>
 			 				<div className="col-lg-4 col-md-6 col-sm-6" style={tile===2||tile===0?{}:{opacity:"0.3"}} onMouseOver={()=>setTile(2)} onMouseOut={()=>setTile(0)}>
-			 					<WorkCard title="Graphic Design" img="graphic.jpg"/>
+			 					<WorkCard title="Graphic Design" img="graphic.jpg"  url="/work#graphicdes"/>
 			 				</div>
 			 				<div className="col-lg-4 col-md-6 col-sm-6" style={tile===3||tile===0?{}:{opacity:"0.3"}} onMouseOver={()=>setTile(3)} onMouseOut={()=>setTile(0)}>
 			 					<WorkCard title="Marketing" img="marketing.jpg"/>
