@@ -7,15 +7,20 @@ function MobileNavbar(){
 
 	const history = useHistory();
 
-	const MyComponent = () => {
-	const divRef = useRef(null);
+	const scrollToBottom = () =>{ 
+    	window.scrollTo({ 
+      	top: "50px", 
+     	behavior: 'auto'
+      	/* you can also use 'auto' behaviour 
+         in place of 'smooth' */
+    	});
+  	};
 
-	useEffect(() => {
-	divRef.current.scrollIntoView({ behavior: 'smooth' });
-	});
-
-	return <div ref={divRef} />;
-	}
+  	useEffect(() => {
+  		if (menu){
+  			scrollToBottom()
+  		}
+  	}, [])
 
 	return(
 	<div>
