@@ -38,7 +38,7 @@ function ContactUs(){
 		const data = {name: name, email: email, phone: phone, details: details, wd:wd, gd: gd, mar:mar, va:va};
 		console.log(data);
 		axios.defaults.headers.post['Content-Type'] = 'application/json';
-		axios.post("https://formsubmit.co/ajax/bajra1.nyra@gmail.com", data)
+		axios.post("https://formsubmit.co/ajax/raydmmedia@gmail.com", data)
 		.then((res) => {alert("Thanks for reaching out to us. We'll get back to you shortly")})
 		.catch((err) => {});
 		updateName("");

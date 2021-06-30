@@ -71,11 +71,6 @@ function AboutUs(){
 				</div>
 				<div className="col-lg-4 col-md-6 col-sm-6" style={{margin:"1em 0"}}>
 					<img src={"webdesign.jpg"} style={{height:"100%", maxHeight:"35vh"}}/>
-					<h3 className="Heading">Bajra</h3>
-					<p>Web Developer and a random dood from the moon</p>
-				</div>
-				<div className="col-lg-4 col-md-6 col-sm-6" style={{margin:"1em 0"}}>
-					<img src={"webdesign.jpg"} style={{height:"100%", maxHeight:"35vh"}}/>
 					<h3 className="Heading">Sagar</h3>
 					<p>Graphic designer and video editor from the land of rajputs</p>
 				</div>
