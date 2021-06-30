@@ -9,7 +9,7 @@ function MobileNavbar(){
 
 	const scrollToBottom = () =>{ 
     	window.scrollTo({ 
-      	top: "50px", 
+      	top: "100vh", 
      	behavior: 'auto'
       	/* you can also use 'auto' behaviour 
          in place of 'smooth' */
