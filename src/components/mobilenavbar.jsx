@@ -1,4 +1,4 @@
-import {useState, useRef, useEffect} from "react";
+import {useState} from "react";
 import {NavLink, useHistory} from "react-router-dom";
 
 function MobileNavbar(){
@@ -6,21 +6,6 @@ function MobileNavbar(){
 	const [menu, menuClicked] = useState(false);
 
 	const history = useHistory();
-
-	const scrollToBottom = () =>{ 
-    	window.scrollTo({ 
-      	top: "100vh", 
-     	behavior: 'auto'
-      	/* you can also use 'auto' behaviour 
-         in place of 'smooth' */
-    	});
-  	};
-
-  	useEffect(() => {
-  		if (menu){
-  			scrollToBottom()
-  		}
-  	}, [])
 
 	return(
 	<div>
@@ -33,14 +18,12 @@ function MobileNavbar(){
 					<img src="favicon.svg"/>
 				</div>
 				<div>
-					<NavLink style={{fontSize:"1.5em"}}className="nav-link color1" exact to="/home">Home</NavLink>
-					<NavLink style={{fontSize:"1.5em"}}className="nav-link color1" exact to="/about">About</NavLink>
-			        <NavLink style={{fontSize:"1.5em"}}className="nav-link color1" exact to="/work">Work</NavLink>
-			        <NavLink style={{fontSize:"1.5em"}}className="nav-link color1" exact to="/service">Services</NavLink>
-			        <NavLink style={{fontSize:"1.5em"}}className="nav-link color1" exact to="/contact">Contact</NavLink>
-				</div>
-	        	<div style={{color:"white", position:"absolute", zIndex:"100", bottom:"25px", right:"25px", backgroundColor:"transparent"}}> 
-					<span className="buttons" onClick={()=>history.push("/contact")}>Start your Project</span>
+					<NavLink style={{fontSize:"1.5em", textAlign:"center"}} className="nav-link color1" exact to="/home">Home</NavLink>
+					<NavLink style={{fontSize:"1.5em", textAlign:"center"}} className="nav-link color1" exact to="/about">About</NavLink>
+			        <NavLink style={{fontSize:"1.5em", textAlign:"center"}} className="nav-link color1" exact to="/work">Work</NavLink>
+			        <NavLink style={{fontSize:"1.5em", textAlign:"center"}} className="nav-link color1" exact to="/service">Services</NavLink>
+			        <NavLink style={{fontSize:"1.5em", textAlign:"center"}} className="nav-link color1" exact to="/contact">Contact</NavLink>
+			        <NavLink style={{fontSize:"1.5em", textAlign:"center"}} className="nav-link color1 buttons" exact to="/contact">Start your Project</NavLink>
 				</div>
 			</div>:<div />}
 	</div>)

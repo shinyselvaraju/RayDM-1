@@ -30,15 +30,15 @@ function AboutUs(){
 	return(
 		<div>
 		<Sidebar />
-		<div style={device==="laptop"?{minHeight:"48vh", display:"flex", alignItems:"flex-end", textAlign:"center"}:tablet?{minHeight:"25vh", display:"flex", alignItems:"flex-center"}:{minHeight:"15vh", display:"flex", alignItems:"flex-end"}}>
+		<div style={device==="laptop"?{minHeight:"52vh", display:"flex", alignItems:"flex-end", textAlign:"center"}:tablet?{minHeight:"25vh", display:"flex", alignItems:"flex-center"}:{minHeight:"15vh", display:"flex", alignItems:"flex-end"}}>
 				<div style={{color:"white", width:"97vw"}}>
 					<img src="about.png" style={{maxWidth:"100vw"}}></img>
 				</div>
 		</div>
 		<div className="container" style={{color:"white", marginBottom:"1em"}}>
 			<div className="row">
-				<div className="col-lg-6">
-					<img src="favicon.svg"></img>
+				<div className="col-lg-6" style={{display:"flex", alignItems:"center"}}>
+					<img src="favicon.svg" ></img>
 				</div>
 				<div className="col-lg-6">
 					<h1 style={{margin:"2em 0"}}>

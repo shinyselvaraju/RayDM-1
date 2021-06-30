@@ -33,7 +33,7 @@ function Service(){
 	return(
 		<div>
 			<Sidebar/>
-			<div style={device==="laptop"?{minHeight:"48vh", display:"flex", alignItems:"flex-end", textAlign:"center"}:tablet?{minHeight:"25vh", display:"flex", alignItems:"flex-center"}:{minHeight:"15vh", display:"flex", alignItems:"flex-end"}}>
+			<div style={device==="laptop"?{minHeight:"52vh", display:"flex", alignItems:"flex-end", textAlign:"center"}:tablet?{minHeight:"25vh", display:"flex", alignItems:"flex-center"}:{minHeight:"15vh", display:"flex", alignItems:"flex-end"}}>
 				<div style={{color:"white", width:"97vw"}}>
 					<img src="services.png" style={{maxWidth:"100vw"}}></img>
 			 </div>
