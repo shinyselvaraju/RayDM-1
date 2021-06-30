@@ -1,9 +1,11 @@
 import {useState} from "react";
-import {NavLink} from "react-router-dom";
+import {NavLink, useHistory} from "react-router-dom";
 
 function MobileNavbar(){
 
 	const [menu, menuClicked] = useState(false);
+
+	const history = useHistory();
 
 	return(
 	<div>
@@ -12,12 +14,18 @@ function MobileNavbar(){
 		</div>
 
 		{menu?<div id="mobilenavbar" style={{zIndex:"100"}}>
+				<div style={{position:"absolute", height:"100px", width:"100px", top:"10px", left:"10px"}}>
+					<img src="favicon.svg"/>
+				</div>
 				<div>
-					<NavLink className="nav-link color1" exact to="/home">Home</NavLink>
-					<NavLink className="nav-link color1" exact to="/about">About</NavLink>
-			        <NavLink className="nav-link color1" exact to="/work">Work</NavLink>
-			        <NavLink className="nav-link color1" exact to="/service">Services</NavLink>
-			        <NavLink className="nav-link color1" exact to="/contact">Contact</NavLink>
+					<NavLink style={{fontSize:"1.5em"}}className="nav-link color1" exact to="/home">Home</NavLink>
+					<NavLink style={{fontSize:"1.5em"}}className="nav-link color1" exact to="/about">About</NavLink>
+			        <NavLink style={{fontSize:"1.5em"}}className="nav-link color1" exact to="/work">Work</NavLink>
+			        <NavLink style={{fontSize:"1.5em"}}className="nav-link color1" exact to="/service">Services</NavLink>
+			        <NavLink style={{fontSize:"1.5em"}}className="nav-link color1" exact to="/contact">Contact</NavLink>
+				</div>
+	        	<div style={{color:"white", position:"absolute", zIndex:"100", bottom:"25px", right:"25px", backgroundColor:"transparent"}}> 
+					<span className="buttons" onClick={()=>history.push("/contact")}>Start your Project</span>
 				</div>
 			</div>:<div />}
 	</div>)

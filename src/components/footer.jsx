@@ -11,17 +11,17 @@ function Footer(){
 				<div className="row lp">
 					<div className="col-md-4 col-sm-6 lp">
 						<h3 className="lp" >Quick Links</h3>
-						<p  className="lp" onClick={()=>history.push("/about")}>About</p>
-						<p  className="lp" onClick={()=>history.push("/service")}>Services</p>
-						<p  className="lp" onClick={()=>history.push("/work")}>Work</p>
-						<p  className="lp" onClick={()=>history.push("/contact")}>Contact</p>
+						<p  className="lp" style={{cursor:"pointer"}}onClick={()=>history.push("/about")}>About</p>
+						<p  className="lp" style={{cursor:"pointer"}}onClick={()=>history.push("/service")}>Services</p>
+						<p  className="lp" style={{cursor:"pointer"}}onClick={()=>history.push("/work")}>Work</p>
+						<p  className="lp" style={{cursor:"pointer"}}onClick={()=>history.push("/contact")}>Contact</p>
 					</div>
 					<div className="col-md-4 col-sm-6 lp">
 						<h3 className="lp" >Experts in</h3>
-						<p className="lp" >Web Design</p>
-						<p className="lp" >Web Development</p>
-						<p className="lp" >Instagram ads</p>
-						<p className="lp" >Graphic design</p>
+						<p  className="lp" style={{cursor:"pointer"}} onClick={() => history.push("/work#webdev")}>Web Development</p>
+						<p  className="lp" style={{cursor:"pointer"}} onClick={() => history.push("/work#graphicdes")}>Graphic Design</p>
+						<p  className="lp" style={{cursor:"pointer"}} onClick={() => history.push("/work#marketingig")}>Marketing</p>
+						<p  className="lp" style={{cursor:"pointer"}} onClick={() => history.push("/work#marketingig")}>Virtual Assistance</p>
 					</div>
 					<div className="col-md-4 col-sm-6 lp">
 						<SocialBar/>

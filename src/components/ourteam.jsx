@@ -36,16 +36,20 @@ function AboutUs(){
 				</div>
 		</div>
 		<div className="container" style={{color:"white", marginBottom:"1em"}}>
-			<h2 style={{margin:"2em 0"}}>
-				Our Boring Story
-			</h2>
-			<p>
-				Hey There!
-RayDM is a creative design company that offers services like website development, Marketing, and visual assistance required with a personal touch. The founders Shiny Selvaraj, Vaibav, and Charan and their teamwork together to design extraordinary work for the people that believe in them. We work with exceptional talent who intend to provoke a sense of inspiration and awe in the person marveling at our designs. As a small startup that is rapidly growing, we wish to empower other small start-ups by helping them grow their businesses with our smart marketing and innovative content.
-At RayDM we Love to Create, Customize, and Discover.
-	
-				<hr />
-			</p>
+			<div className="row">
+				<div className="col-lg-6">
+					<img src="favicon.svg"></img>
+				</div>
+				<div className="col-lg-6">
+					<h1 style={{margin:"2em 0"}}>
+						Our Boring Story
+					</h1>
+					<h5>
+						Hey There! RayDM is a creative design company that offers services like website development, Marketing, and Virtual assistance with a personal touch. We work with exceptional talent who intend to provoke a sense of inspiration and awe in the person marveling at our designs. As a small startup that is rapidly growing, we wish to empower other small start-ups by helping them grow their businesses with our smart marketing and innovative content. <br/>At RayDM we Love to <b>Create, Customize, and Discover.</b>
+					</h5>
+				</div>
+			</div>	
+			<hr />
 		</div>
 		<div className="container" style={{color:"white"}}>
 			<h1 style={{marginTop:"2em", marginBottom:"1em"}}>Meet our Team</h1>

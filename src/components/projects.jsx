@@ -41,58 +41,55 @@ const works=[
 		id:5
 	},
 	{
-		img:"webdesign.jpg",
+		img:"des (1).jpg",
 		title: "Graphic Design",
-		url:"",
+		url:"https://www.instagram.com/vazandawwww/?hl=en",
 		id:6
 	},
 	{
-		img:"webdesign.jpg",
+		img:"des (2).jpg",
 		title: "Graphic Design",
-		url:"",
+		url:"https://www.instagram.com/vazandawwww/?hl=en",
 		id:7
 	},
 	{
-		img:"webdesign.jpg",
+		img:"des (3).jpg",
 		title: "Graphic Design",
-		url:"",
+		url:"https://www.instagram.com/vazandawwww/?hl=en",
 		id:8
 	},
 	{
-		img:"webdesign.jpg",
+		img:"des (4).jpg",
 		title: "Graphic Design",
-		url:"",
+		url:"https://www.instagram.com/vazandawwww/?hl=en",
 		id:9
 	},
 	{
-		img:"webdesign.jpg",
+		img:"des (5).jpg",
 		title: "Graphic Design",
-		url:"",
+		url:"https://www.instagram.com/vazandawwww/?hl=en",
 		id:10
 	},
 	{
-		img:"webdesign.jpg",
+		img:"igacc1.png",
+		name:"Wealthy with Peter",
 		title: "Social Media",
-		url:"",
+		url:"https://www.instagram.com/peters_world_of_advice/?utm_medium=copy_link",
 		id:11
 	},
 	{
-		img:"webdesign.jpg",
+		img:"igacc2.png",
+		name:"Kayode Bradnock",
 		title: "Social Media",
-		url:"",
+		url:"https://www.instagram.com/kayode_bradnock/?utm_medium=copy_link",
 		id:12
 	},
 	{
-		img:"webdesign.jpg",
+		img:"igacc3.png",
+		name:"Success Thinks",
 		title: "Social Media",
-		url:"",
+		url:"https://www.instagram.com/successthinks/?hl=en",
 		id:13
-	},
-	{
-		img:"webdesign.jpg",
-		title: "Social Media",
-		url:"",
-		id:14
 	}
 ]
 
@@ -128,7 +125,7 @@ function Projects(){
 				</div>
 			</div>
 			<div className="container">
-				<h2 style={{color:"white"}}>Each project is tailored to perfection with close attention to the details by our members who are skilled professionals in their fields.</h2>
+				<h3 style={{color:"white", marginTop:"1em"}}>Each project is tailored to perfection with close attention to the details by our members who are skilled professionals in their fields.</h3>
 	 			<div className="row" id="webdev" >
 	 				<h1 style={{marginTop:"2em", color:"white"}}>Web Development</h1>
 	 				{works.map((work) =>(work.title==="Web Development"?<div className="col-lg-4 col-md-6 col-sm-6" style={tile===work.id||tile===0?{}:{opacity:"0.3"}} onMouseOver={()=>setTile(work.id)} onMouseOut={()=>setTile(0)}><WorkCard img={work.img} title={work.name} url={work.url}/></div>:<div />))
