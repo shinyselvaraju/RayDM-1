@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useState, useRef, useEffect} from "react";
 import {NavLink, useHistory} from "react-router-dom";
 
 function MobileNavbar(){
@@ -6,6 +6,16 @@ function MobileNavbar(){
 	const [menu, menuClicked] = useState(false);
 
 	const history = useHistory();
+
+	const MyComponent = () => {
+	const divRef = useRef(null);
+
+	useEffect(() => {
+	divRef.current.scrollIntoView({ behavior: 'smooth' });
+	});
+
+	return <div ref={divRef} />;
+	}
 
 	return(
 	<div>

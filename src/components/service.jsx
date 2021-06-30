@@ -48,16 +48,16 @@ function Service(){
 	 					<WorkCard title="Graphic Design" img="graphic.jpg"  url="/work#graphicdes"/>
 	 				</div>
 	 				<div className="col-lg-4 col-md-6 col-sm-6" style={tile===3||tile===0?{}:{opacity:"0.3"}} onMouseOver={()=>setTile(3)} onMouseOut={()=>setTile(0)}>
-	 					<WorkCard title="Marketing" img="marketing.jpg"/>
+	 					<WorkCard title="Marketing" img="marketing.jpg" url="/work#marketingig"/>
 	 				</div>
 	 				<div className="col-lg-4 col-md-6 col-sm-6" style={tile===4||tile===0?{}:{opacity:"0.3"}} onMouseOver={()=>setTile(4)} onMouseOut={()=>setTile(0)}>
-	 					<WorkCard title="Virtual Assistance" img="va.jpg"/>
+	 					<WorkCard title="Virtual Assistance" img="va.jpg" url="/work#marketingig"/>
 	 				</div>
 	 				<div className="col-lg-4 col-md-6 col-sm-6" style={tile===5||tile===0?{}:{opacity:"0.3"}} onMouseOver={()=>setTile(5)} onMouseOut={()=>setTile(0)}>
-	 					<WorkCard title="Branding" img="brand.png"/>
+	 					<WorkCard title="Branding" img="brand.png" url="/work#marketingig"/>
 	 				</div>
 	 				<div className="col-lg-4 col-md-6 col-sm-6" style={tile===6||tile===0?{}:{opacity:"0.3"}} onMouseOver={()=>setTile(6)} onMouseOut={()=>setTile(0)}>
-	 					<WorkCard title="Content Creation" img="content.jpg"/>
+	 					<WorkCard title="Content Creation" img="content.jpg" url="/work#graphicdes"/>
 	 				</div>
 	 			</div>
 	 			<h3 style={{color:"white", marginTop:"1em"}}>See RayDM in action: <span style={{fontSize:"1em", cursor:"pointer", borderBottom:"2px solid #0f0"}} onClick={() => history.push("/work")}>Our Works</span></h3>
